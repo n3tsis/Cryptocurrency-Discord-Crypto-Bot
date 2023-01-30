@@ -65,6 +65,32 @@ Delete all visible messages from chat.
 2. Edit the config file carefully without missing any needed value!
 3. Start your bot and enjoy! -> node index.js
 
+---------------------------------------------------------------------------------------------------------------
+sudo apt install npm -y
+sudo npm install n -g
+sudo n v10.19.0
+sudo apt purge nodejs npm -y
+sudo ln -sf /usr/local/bin/node /usr/bin/node 
+sudo ln -sf /usr/local/bin/npm /usr/bin/npm
+
+sudo apt-get install apache2
+sudo apt-get install php7.4 php7.4-mysql php7.4-gd
+sudo apt-get install mysql-server 
+
+sudo mysql -u root -p
+CREATE database sample_db;
+CREATE USER 'test_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'EXAMPLE_PASSWORD';
+GRANT ALL PRIVILEGES ON sample_db.* TO 'test_user'@'localhost';
+FLUSH PRIVILEGES;
+QUIT;
+
+sudo apt install -y php-json php-mbstring php-zip php-gd php-curl
+sudo apt install -y phpmyadmin
+sudo ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf-available/phpmyadmin.conf
+sudo a2enconf phpmyadmin.conf
+sudo systemctl restart apache2
+---------------------------------------------------------------------------------------------------------------
+
 ## Staking
 1. The database connection needs to work  
 2. Enable staking on your wallet and add walletnotify option to your coin config (change the path to the bots transactions.sh script)  
